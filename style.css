@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#background {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transition: background-image 1s ease-in-out;
+}
+
+header, main, footer {
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 1rem auto;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.categories button {
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.categories button:hover {
+  background: #666;
+}
