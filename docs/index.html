@@ -1,41 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Learnything.com</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div id="app" class="background default-bg">
-    <h1>Learnything.com</h1>
-    <div id="home">
-      <p>Select your region:</p>
-      <select id="regionSelect">
-        <option value="Africa">Africa</option>
-        <option value="America">America</option>
-        <option value="Asia">Asia</option>
-      </select>
+<h1>Choose your mastery path:</h1>
 
-      <p>Choose your mastery path:</p>
-      <div class="category-buttons">
-        <button onclick="loadCategory('learner')">Learner</button>
-        <button onclick="loadCategory('gamer')">Gamer</button>
-        <button onclick="loadCategory('artist')">Artist</button>
-        <button onclick="loadCategory('hacker')">Ethical Hacker</button>
-        <button onclick="loadCategory('hobbyist')">Hobbyist</button>
-        <button onclick="loadCategory('iq')">IQ Test</button>
-      </div>
-    </div>
+<button class="category" data-target="learner">Learner</button>
+<button class="category" data-target="gamer">Gamer</button>
+<button class="category" data-target="artist">Artist</button>
+<button class="category" data-target="hacker">Ethical Hacker</button>
+<button class="category" data-target="hobbyist">Hobbyist</button>
+<button class="category" data-target="iq">IQ Test</button>
 
-    <div id="content" style="display:none;"></div>
-    <button id="backBtn" onclick="goBack()" style="display:none;">⬅ Back</button>
+<!-- Hidden content sections -->
+<div id="learner" class="content" style="display:none;">📘 Learner Mastery Unlocked!</div>
+<div id="gamer" class="content" style="display:none;">🎮 Gamer Mastery Unlocked!</div>
+<div id="artist" class="content" style="display:none;">🎨 Artist Mastery Unlocked!</div>
+<div id="hacker" class="content" style="display:none;">💻 Ethical Hacker Mastery Unlocked!</div>
+<div id="hobbyist" class="content" style="display:none;">🛠️ Hobbyist Mastery Unlocked!</div>
+<div id="iq" class="content" style="display:none;">🧠 IQ Test Mastery Unlocked!</div>
 
-    <div id="ad-container">
-      <!-- Adsterra script goes here once approved -->
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<script src="./script.js"></script>
